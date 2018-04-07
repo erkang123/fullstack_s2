@@ -39,7 +39,7 @@
 # print(data1)
 # f.close()
 
-f = open('小重山','r',encoding='utf-8')
+# f = open('小重山','r',encoding='utf-8')
 # number = 0
 # for i in f.readlines():
 #     number += 1
@@ -47,5 +47,44 @@ f = open('小重山','r',encoding='utf-8')
 #         i = ''.join([i.strip(),'iiii'])
 #     print(i.strip())
 
-for i in f: #这是for 内部将f对象做成一个迭代器，用一行取一行
-    print(i.strip())
+# for i in f: #这是for 内部将f对象做成一个迭代器，用一行取一行
+# #     print(i.strip())
+# print(f.tell())  #查找光标位置
+# print(f.read(2))
+# print(f.tell())
+#
+# f.seek(30)         #调整光标位置的方法
+# print(f.read(4))
+
+# import sys,time
+# for i in range(30):
+#     sys.stdout.write("*")
+#     sys.stdout.flush()
+#     time.sleep(0.2)
+
+# import sys,time
+# for i in range(30):
+#     print('*',end = '',flush=True)
+#
+#     time.sleep(0.1)
+
+# f = open('小重山2','w',encoding='utf-8')
+# f.truncate(5)
+# f.close()
+
+#r+,w+,a+
+f = open('小重山','r+',encoding='utf-8')
+print()
+
+#终极问题
+
+f_read = open('小重山','r',encoding='utf-8')
+f_write = open('小重山2','w',encoding='utf-8')
+number = 0
+for line in f_read:
+    number +=1
+    if number == 5:
+        line = 'hello 岳飞 \n'
+    f_write.write(line)
+f_read.close()
+f_write.close()

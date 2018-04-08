@@ -1,0 +1,447 @@
+
+
+------------------day 2 第二天------------------
+第一节
+第二节：操作系统发展史
+第三节：操作系统发展史
+
+第四节：二进制
+	城池敌人来袭
+		人数：	64	32	16	8	4	2	1
+		n=		1	1	1	1	1	1	1
+				1位 = 1bit
+		点几根烟（n）能代表多少个敌人：2**n - 1 
+
+第五节：编码（把计算机理解的语言转换为人类能懂的语言）
+	1.编码
+	0101010101  --->  abc
+
+	001  = 1 -> a
+	010  = 2 -> b
+	011  = 3 -> c
+	100  = 4 -> d
+
+ASCII码表  每一个字符统一都需要8个bit来存储
+
+2.计算机容量
+	1 位  = 1 bit
+	8 bit = 1 bytes 字节
+	1024bytes = 1kbytes = 1KB
+	1024KB = 1 Million Bytes = 1MB
+	1024MB = 1 Gigabytes
+	1024GB = 1TB
+	1024TB = 1PB
+	
+第六节：编程语言介绍
+	什么是编程语言？
+	定义好一套与计算机交互的语法规则，这套规则就可以称为一门语言
+	我们听不懂日语是因为不懂日语的语法规则
+	
+	学编程 == 学语法规则
+	
+	编程能干什么？
+		print hello world 
+		eject cd 
+		一堆指令的组合  == 》》 软件
+		
+		有很多套语计算机交互的语法规则，
+		600多种编程语言
+		
+		C = 各个操作系统的开发语言  1973
+		C++ = C++是C语言的加强版
+		
+		Java = 1995年由sun公司开发出来，Java虚拟机支持跨平台
+		php  = 1994年，纯web开发语言，1994年Netscape浏览器诞生了
+		python  = 1989年诞生，跟linux同年诞生，
+		lua  = nginx 的脚本语言，ngnix是时下最NB的WEB服务器
+	
+第七节：Python语言介绍
+
+
+	python 初探
+		发展历史
+		
+		编译型  = 全部翻译，再执行， 翻译 = 编译型  c ,c++
+		解释型  = 边执行边翻译  python ,php java c# perl ruby javascript
+		
+		环境安装
+		第一个python程序
+	
+
+------------------day 3 第三天------------------
+第一节：
+	python介绍
+	发展史
+	Python 2.6 - october 1,2008
+	Python 3.0 - December 3,2008
+	Python 2.7 - July 3,2010
+
+	系统位数
+
+第二节：
+	版本选择python 2.x or python 3.x
+	总结：python 2.x遗产，3.x是现在和未来的语言
+
+	2.x  = 默认编码 ASCII码
+	3.x  = 默认编码 = unicode = 默认支持中文，不兼容2.x ,核心语法调整，更易学。新特性默认只在3.x上有
+
+第三节：安装
+
+第四节：文件后缀及系统环境变量
+	.txt 记事本文本文件
+	.doc word文件
+	.xls excel文件
+	.ppt PPT文件
+	.exe 可执行文件
+	.py  pyhon 文件
+	.java Java文件
+
+	系统环境变量 :安装时可以选择添加path路径
+
+第五节：Python程序文件执行与其它语言的简单对比
+	执行python代码方式有：
+		1.交互器，缺点，程序不能长期保存（主要用于简单的语法测试相关）
+		2.文件执行
+	
+第六节：变量详解
+	变量
+		变量是为了存储程序运算过程中的一些中间结果，为了方便日后调用
+	变量命名规则：
+		1.要具有描述性
+		2.变量名只能——，数字，字母组成，不可以是空格或特殊字符（#？！@￥）
+		3.不能以中文为变量名
+		4.不能以数字开头
+		5.保留字符不能被使用
+	常量
+		在py里面，所有的变量都是可变的，为了区分常量，全部大写
+第七节：变量的重新赋值
+	name = 'alext li'
+	name2 = name
+	print (name,name2)
+	name = 'jack'
+	print(name)
+	print(name2)
+第八节：变量的重新赋值02
+	内存回收
+第九节：编码部分历史及文件编码简介
+	ASSIC --> gb2312 -->gbk1.0 -->gb18030
+	ASSIC -->unicode -->utf-8
+	
+	1980年支持中文的第一张表就叫 GB2312		6700+
+	1995年GBK 1.0							20000
+	2000年 GB18030							27000
+	unicode 万国码	支持所有国家和地区的编码	2**16 =65535 =  存一个字符都统一占用2个字节
+	UTF-8 = unicode 的扩展集，可变长的字符编码集
+	
+	unicode 是向下兼容gb2312,gbk
+	
+	python2.x
+	# -*- coding: utf-8 -*-
+	#coding:utf-8
+	
+	python3.x 
+		不需要声明
+		
+第十节：注释及简单的用户输入
+	注释：
+	单行注释：#
+	多行注释三个单引号或三个双引号：''' '''  或 """ """
+	用户输入：input("123")
+		input接受的所有数据都是字符串，即便输入的是数字，但依然会被当成字符串来处理
+		
+	输入密码时，如果想要不可见，需要利用getpass 模块中的 getpass方法：
+		import getpass
+		pwd = getpass.getpass("请输入密码：")
+		
+第十一节：if语句实现猜年龄
+	if ....:
+		...
+	elif ...:
+		...
+	else:
+		...
+第十二节：缩进
+	缩进级别必须保持一致
+
+
+------------------day 4 第四天------------------
+第一节：算术运算符
+第二节：比较运算符
+第三节：赋值运算符
+	num += 1 等价于num = num + 1
+	num -= 1 等价于num = num - 1
+	num *= 2 等价于num = num * 2
+	num /= 2 等价于 num = num / 2
+	
+	逻辑运算符：not and or
+	 and :且
+	 条件1 and 条件2		连接两个条件，只有两个条件都为True的时候，结果才会为True
+	 5>3 and 6>
+	 or : 或，或者
+	 5>3 or 6<2
+	 not:不
+	 not 5>3	== False
+	 not 5<3 	==True
+第六节：短路原则
+	条件1 and 条件2  条件1为假时，and前后两个条件组成的表达式结果肯定为假，所以不会计算条件2了
+	条件1 or  条件2  条件1为真时，结果肯定为真，第二个条件不计算
+	 
+第七节：while循环
+	猜年龄
+	age = 50
+	flag = True
+	while flag:
+		user_input_age = int (input("Age is :"))
+		if user_input_age == age:
+			print("yes")
+			break
+		elif user_input_age > age:
+			print("Is bigger")
+		else:
+			print("Is smaller")
+	while 条件：
+		。。。
+	else:
+		正常结束循环时，会执行else，（break时不会执行）
+		
+	break ：跳出循环
+	continue:跳过本次循环，继续下次循环
+	
+	
+	print ("hello world.",end = "")
+	print ("hello world.",end = "")
+	print ("hello world.",end = "")
+	
+	\n linux换行  \r\n windows换行
+	
+	练习：99乘法口诀表
+第十节:总结
+
+------------------day 5 第五天------------------
+内容：
+上堂课内容
+本堂课内容
+	字符串格式化输出
+	for
+	while
+	break
+	continue
+	数据类型
+		整数
+		字符串
+		列表，元组
+			查
+				索引（下标），都是从0开始
+				切片，内置方法
+				.count 查某个元素的出现次数
+				.index 根据内容找其对应的位置
+				"erkang" in list_a
+			增加
+				a.append() 追加
+				a.insert(index,"内容")
+				a.extend(b) 扩展
+			修改
+				a[index] = "新值"
+				a[start:end] = [a,b,c]
+			删除
+				a.remove("内容")
+				b.pop(index)  不指定index,默认删除最后一个元素
+				del a[index]    del a
+				a.clear() 清空
+			排序
+				a.sort()
+				a.reverse()
+			身份判断
+				type(a) is list
+				
+			
+				
+		购物车程序
+		字典
+		三级菜单
+		
+第一节：回顾上节内容
+第二节：IDE介绍 pycharm
+第三节：字符串格式化
+	占位符：%s  s= string
+			%d  d =digit   整数
+			%f  f = float 浮点数
+	if salary.isdigit():#长的像不像数字
+第四节：数据类型
+	数据运算
+		数据类型初识
+			数字 
+				整数  int(integer)
+					整型
+					长整型
+					in py3 已经不区分整型与长整型了
+			布尔 只有2种状态，分别是
+				真 True
+				假 False
+				
+			字符串
+				salary.isdigit()
+				计算机中一切皆对象
+				世界万物皆为对象，一切对象皆可分类
+第五节：
+	循环loop
+		有限循环，次数限制
+		无限循环=死循环
+		for i in range(3):不包括3 range(1,3),range(1,100,2)
+				
+		while 条件：
+		continue 结束本次循环，继续下一次循环
+		break 强制退出循环
+		
+第七节：标志位讲解
+第八节：列表讲解，切片，内置方法
+			列表，元组
+			创建列表
+				a = [1,2,3]
+				b = list((1,2,3))
+				print(a)
+			查
+				索引（下标），都是从0开始
+				切片，内置方法
+				.count 查某个元素的出现次数
+				.index 根据内容找其对应的位置
+				"erkang" in list_a
+			增加
+				a.append() 追加
+				a.insert(index,"内容")
+				a.extend(b) 扩展
+			修改
+				a[index] = "新值"
+				a[start:end] = [a,b,c]
+			删除
+				a.remove("内容")
+				res = b.pop(index)  不指定index,默认删除最后一个元素
+				del a[index]    del a
+				a.clear() 清空
+			排序
+				a.sort()
+				a.reverse()
+			身份判断
+				type(a) is list
+作业：
+	购物车程序
+		salary = 5000
+		
+		1.ipthon6s 5800
+		2.mac book 9000
+		3.coffee 32
+		4.python book 80
+		5.bicyle    1500
+	>>>:1
+		余额不足，-3000
+	>>>:5
+		已加入bicyle 到你的购物车，当前余额：3500
+	>>>:quit
+	bicyle	1500
+	coffee	30
+	
+	您的余额为：2907
+	欢迎下次光临
+		
+------------------day 6 第六天------------------
+第一节：回顾昨天的内容
+第二节：元组（只读列表）
+	tup1 = () #空元组
+	tup2 = (2,) #一个元素，需要在元素后面添加逗号
+	
+	print(a[1:2])  查询数据
+第三，四节：购物车讲解
+第五节：字典
+	字典是python中唯一的映射类型，采用键值对（key - value）的形式存储数据
+	
+	获得存储过程中的id :print(id(a))
+	不可变类型：整型，字符串，元组
+	可变类型：列表，字典
+	dic = {'name':'alex',age = 35,'hobby':'girl'}
+	
+	字典两大特点：无序，键唯一
+	
+	创建字典：
+		dic1 = {'name':'erkang'}
+		dic2 = dict((('name','alex'),))
+	查
+		print(dic3['name'])
+		print(dic3.keys())  #获取字典的键key
+		print(dic3.values())
+		print(dic3.items())
+	改
+		dic4['age'] = 20
+		dic4.update(dic5)  #类似于列表中的extend方法
+	删除
+		del dic6['name']        #删除字典中指定键值对
+		del  dic6               #删除整个字典
+		dic6.clear()            #清空字典，变为一个空字典
+		ret = dic6.pop('age')   #删除字典中指定键值对，并返回改键值对的值
+		a = dic6.popitem()      #随机删除某组键值对，并以元组方式返回值
+		print(ret)
+	其它操作及方法
+		# dic7 = dict.fromkeys(['host1','host2','host3'],'test')
+		    #排序
+		# dic = {5:'5555',2:'22234',3:'4444'}
+		# print(sorted(dic))
+		# print(sorted(dic.values()))
+		# print(sorted(dic.items()))
+		#字典遍历
+		dic = {5:'5555',2:'22234',3:'4444'}
+		# for k,v in dic.items():
+		#     print(k,v)
+
+		for i in dic:
+			print(i,dic[i]) #效率高
+第六，七节：
+	字典操作
+第八节：字符串补充
+	#摘一些重要的字符串方法
+	# print(st.count('l'))  #统计元素个数
+	# print(st.center(50,'-')) #字符串居中
+	# print(st.startswith('h')) #判断是否以某个字符开头
+	# print(st.find('e'))  #查找字符在字符串中的索引位置
+	# print(st2.format(name = 'alex',age = 37))  #格式化输出的另一种方式
+	# print('ABDcs'.lower()) #大写变小写
+	# print('ABDcs'.upper()) #大写变小写
+	# print('ABD cs '.strip()) #去掉前后换行，空格符
+	# print('ABD cs '.replace('cs','lesson')) #进行替换
+	# print('my title'.split('t')) #以什么进行分割，变成一个列表
+
+------------------day 7 第七天------------------	
+第一二节：三级目录讲解
+第三节：字符编码
+	二进制：
+	--->ASSIC ：只能存英文和拉丁字符，一个字符占一个字节，8位
+	
+	unicode:utf-32  一个字符占4个字节
+	unicode:utf-16  一个字符占2个字节或2个以上，
+	unicode:utf-8  一个英文用ASSIC码存，一个中文占3个字节
+	
+	in pyton2
+		默认是 assic
+	in python3
+		默认是 unicode
+		encode 在编码的同时，会把数据转成bytes类型
+		b = byte = 字节类型 = [0-255]
+		
+------------------day 8 第八天------------------
+第一节：文件操作
+
+------------------day 14 第十四天---------------
+将要讲的内容：
+	函数
+	模块中的
+	面向对象编程
+	
+	本堂课L、：
+		1 深浅拷贝
+			浅拷  =  只拷贝第一层
+			深拷  = 
+			xiaosan  = copy.copy(s) #浅拷贝
+
+			xiaosan1 = copy.deepcopy(s) #深拷贝
+		2 Set
+		
+第二节：
+	

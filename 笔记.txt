@@ -380,7 +380,7 @@ ASCII码表  每一个字符统一都需要8个bit来存储
 		a = dic6.popitem()      #随机删除某组键值对，并以元组方式返回值
 		print(ret)
 	其它操作及方法
-		# dic7 = dict.fromkeys(['host1','host2','host3'],'test')
+		# dic7 = dict1.fromkeys(['host1','host2','host3'],'test')
 		    #排序
 		# dic = {5:'5555',2:'22234',3:'4444'}
 		# print(sorted(dic))
@@ -441,7 +441,32 @@ ASCII码表  每一个字符统一都需要8个bit来存储
 			xiaosan  = copy.copy(s) #浅拷贝
 
 			xiaosan1 = copy.deepcopy(s) #深拷贝
-		2 Set
-		
+		2 Set 集合：把不同的元素组合在一起
+
+            交集
+
+            并集
+
+            差集
+
+
+	函数：
+	    1.概念
+
+	    作用：
+	        1.减少重复代码
+	        2.方便修改，更易扩展
+	        3.保持代码一致性
+
+	     定义函数define
+	        def f():
+	            pass
+	     调用
+	        f()
+         函数命名规则：
+            取一个有意义的名字，一看就知道是干啥用的
+            区分大小写
+            函数名不能用保留字
+
 第二节：
 	

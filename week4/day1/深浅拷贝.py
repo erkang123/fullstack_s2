@@ -19,6 +19,6 @@ print(s3)
 print(s)  #s也变了
 
 import copy
-xiaosan  = copy.copy(s) #浅拷贝
+xiaosan  = copy.copy(s) #浅拷贝，浅拷贝只会考皮第一层
 
 xiaosan1 = copy.deepcopy(s) #深拷贝

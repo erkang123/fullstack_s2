@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../dyiawautotest/.idea/dyiawautotest.iml" filepath="$PROJECT_DIR$/../dyiawautotest/.idea/dyiawautotest.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/fullstack_s2.iml" filepath="$PROJECT_DIR$/.idea/fullstack_s2.iml" />
+      <module fileurl="file://G:/何永康/D盘/python14/.idea/python14.iml" filepath="G:/何永康/D盘/python14/.idea/python14.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../s14django/.idea/s14django.iml" filepath="$PROJECT_DIR$/../s14django/.idea/s14django.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../todoapp/.idea/todoapp.iml" filepath="$PROJECT_DIR$/../todoapp/.idea/todoapp.iml" />
     </modules>
   </component>
 </project>

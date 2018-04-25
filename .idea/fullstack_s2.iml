@@ -4,6 +4,10 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="jdk" jdkName="Python 3.6" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="python14" />
+    <orderEntry type="module" module-name="s14django" />
+    <orderEntry type="module" module-name="todoapp" />
+    <orderEntry type="module" module-name="dyiawautotest" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />
